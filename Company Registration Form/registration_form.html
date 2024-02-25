@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Company Registration</title>
+        <style>
+            textarea{
+                resize: none;
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 15px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+            body {
+                font-family: Arial, sans-serif;
+                background-color: antiquewhite;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+              }
+              
+              .registration-container {
+                background-color:aliceblue;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                max-width: 400px;
+                width: 100%;
+              }
+              
+              
+              
+              .registration-container input[type="text"],
+              .registration-container input[type="tel"],
+              .registration-container select,
+              .registration-container input[type="submit"] {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 15px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+              }
+              
+              .registration-container input[type="submit"] {
+                background-color: #4caf50;
+                color: white;
+                cursor: pointer;
+              }
+              
+              .registration-container input[type="submit"]:hover {
+                background-color: #45a049;
+              }
+        </style>
+    </head>
+    <body>
+        <div class="registration-container">
+        <h1>Company Registration Form</h1>
+        <p style="text-emphasis-color: grey;">Register your business by using this form. required fields are marked with asterisk(*).</p>
+        <hr>
+        <form>
+        <label for="Company Name">Comapany Name*</label>
+        <input type="text" id="Company Name" required>
+        <label for="Owner Name">Owner Name*</label>
+        <input type="text" id="Owner Name" required>
+        <br>
+        <label for="Company mailing address">Company mailing address*</label>
+        <input type="text" id="Company mailing address" placeholder="Street" required>
+        <br>
+        <label for="City"></label>
+        <input type="text" id="State" placeholder="City" required>
+        <label for="State"></label>
+        <input type="text" id="State" placeholder="State" required>
+        <br>
+        <label for="Zip code"></label>
+        <input type="text" id="Zip code" placeholder="Zip code" required>
+        <select id="Country">
+            <option>Select Country</option>
+            <option>Australia</option>
+            <option>Brazil</option>
+            <option>Canada</option>
+            <option>Denmark</option>
+            <option>Egypt</option>
+            <option>Finland</option>
+            <option>Germany</option>
+            <option>Hong Knog</option>
+            <option>India</option>
+            <option>Japan</option>
+            <option>Korea</option>
+        </select>
+        <br>
+        <label for="email">Email*</label>
+        <input type="email" id="email" required>
+        
+        
+        
+        <br>
+        <br>
+        <label for="Phone">Phone Number*</label>
+        <input type="tel" id="Phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+        <br>
+        <select name="center" required >
+            <option>Select Industry</option>
+            <option >Manufacturing</option>
+            <option>Agriculture</option>
+            <option>Production</option>
+            <option>Food industry</option>
+            <option>Construction</option>
+        </select>
+        <br>
+        <input type="Submit" value="Register">
+    </form>
+    </div>
+    </body>
+</html>
